@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/auth";
+const API = "https://art-marketplace.onrender.com/api/auth";
 
 // REGISTER
 async function register() {
