@@ -1,81 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Art Marketplace</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-    <div class="logo">🎨 Art Marketplace</div>
-    <div class="nav-links">
-        <span onclick="showPage('home')">Home</span>
-        <span onclick="showPage('gallery')">
-    <span class="full">Art Gallery</span>
-    <span class="short">Gallery</span>
-</span>
+<div class="container">
+    <h2>Login 🎨</h2>
 
-<span onclick="showPage('profile')">
-    <span class="full">Your Profile</span>
-    <span class="short">Profile</span>
-</span>
-    </div>
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="msg"></p>
+
+    <p>New user? <a href="register.html">Create account</a></p>
 </div>
 
-<!-- HOME -->
-<div id="home" class="page active">
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Discover & Sell Amazing Art</h1>
-            <p>
-                A platform where artists showcase creativity and users explore,
-                buy and enjoy unique artworks from around the world.
-            </p>
-
-            <button onclick="showPage('gallery')">Explore Gallery</button>
-        </div>
-    </div>
-</div>
-
-<!-- GALLERY -->
-<div id="gallery" class="page">
-    <h2>Art Gallery</h2>
-    <div id="products" class="grid"></div>
-</div>
-
-<div id="profile" class="page">
-
-    <div class="profile-container">
-
-        <h2>Your Profile</h2>
-
-        <!-- ADD ART -->
-        <div class="card form-card add-art">
-            <h3>Add Your Art</h3>
-            <input id="title" placeholder="Art Name">
-            <input id="price" placeholder="Price">
-            <input id="image" placeholder="Image URL">
-            <button onclick="addArt()">Post Art</button>
-        </div>
-
-        <!-- UPLOADED -->
-        <div class="section">
-            <h3>Your Uploaded Arts</h3>
-            <div id="myArts" class="grid"></div>
-        </div>
-
-        <!-- BOUGHT -->
-        <div class="section">
-            <h3>Arts You Bought</h3>
-            <div id="boughtArts" class="grid"></div>
-        </div>
-
-    </div>
-
-</div>
-
-<script src="./script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
