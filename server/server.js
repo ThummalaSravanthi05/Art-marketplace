@@ -15,3 +15,6 @@ mongoose.connect("mongodb+srv://ramathummala1234_db_user:bpikUnJxXHc5vbWY@cluste
 app.listen(5000, () => {
     console.log("Server running on port 5000");
 });
+app.get("/", (req, res) => {
+    res.send("Art Marketplace API Running 🚀");
+});
